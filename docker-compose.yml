@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./chatbot_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./chatbot_backend:/app
+    
+
+  frontend:
+    build: ./chatbot_frontend
+    ports:
+      - "8080:80"
+   
